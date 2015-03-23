@@ -14,7 +14,6 @@
 		84FBB1F41ABF34B900D81318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FBB1F31ABF34B900D81318 /* Images.xcassets */; };
 		84FBB1F71ABF34B900D81318 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FBB1F51ABF34B900D81318 /* LaunchScreen.xib */; };
 		84FBB2031ABF34B900D81318 /* LiveMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FBB2021ABF34B900D81318 /* LiveMeTests.m */; };
-		84FBB20E1ABF34DA00D81318 /* VideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FBB20D1ABF34DA00D81318 /* VideoCapture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +40,6 @@
 		84FBB1FC1ABF34B900D81318 /* LiveMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FBB2011ABF34B900D81318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FBB2021ABF34B900D81318 /* LiveMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveMeTests.m; sourceTree = "<group>"; };
-		84FBB20C1ABF34DA00D81318 /* VideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCapture.h; sourceTree = "<group>"; };
-		84FBB20D1ABF34DA00D81318 /* VideoCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCapture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +81,6 @@
 		84FBB1E51ABF34B900D81318 /* LiveMe */ = {
 			isa = PBXGroup;
 			children = (
-				84FBB2121ABF351000D81318 /* Model Classes */,
 				84FBB2111ABF34FA00D81318 /* Resources */,
 				84FBB2101ABF34EB00D81318 /* View Controller */,
 				84FBB20F1ABF34DF00D81318 /* App Delegate */,
@@ -145,15 +141,6 @@
 				84FBB1F01ABF34B900D81318 /* Main.storyboard */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		84FBB2121ABF351000D81318 /* Model Classes */ = {
-			isa = PBXGroup;
-			children = (
-				84FBB20C1ABF34DA00D81318 /* VideoCapture.h */,
-				84FBB20D1ABF34DA00D81318 /* VideoCapture.m */,
-			);
-			name = "Model Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84FBB20E1ABF34DA00D81318 /* VideoCapture.m in Sources */,
 				84FBB1EF1ABF34B900D81318 /* ViewController.m in Sources */,
 				84FBB1EC1ABF34B900D81318 /* AppDelegate.m in Sources */,
 				84FBB1E91ABF34B900D81318 /* main.m in Sources */,
@@ -385,9 +371,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Goni Kaushal (KTCATBMJ43)";
 				INFOPLIST_FILE = LiveMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3f3a914f-44de-4b4d-941b-fef65e0ea5d3";
 			};
 			name = Debug;
 		};
@@ -395,9 +384,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Goni Kaushal (KTCATBMJ43)";
 				INFOPLIST_FILE = LiveMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3f3a914f-44de-4b4d-941b-fef65e0ea5d3";
 			};
 			name = Release;
 		};
@@ -454,6 +446,7 @@
 				84FBB2081ABF34B900D81318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84FBB2091ABF34B900D81318 /* Build configuration list for PBXNativeTarget "LiveMeTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +455,7 @@
 				84FBB20B1ABF34B900D81318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

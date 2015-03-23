@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A75B7780-36CB-403A-8897-FE9D3B624C63</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LiveMe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>64D1F599EF5C8966275C37FB8C8AC00CF0CC0A43</key>
+		<string>https://github.com/bertabus/lms_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LiveMe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>64D1F599EF5C8966275C37FB8C8AC00CF0CC0A43</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bertabus/lms_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>64D1F599EF5C8966275C37FB8C8AC00CF0CC0A43</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>64D1F599EF5C8966275C37FB8C8AC00CF0CC0A43</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LiveMe</string>
+		</dict>
+	</array>
+</dict>
+</plist>
