@@ -8,6 +8,12 @@
 
 #import "ViewController.h"
 
+#include "avcodec.h"
+#include "avformat.h"
+#include "swscale.h"
+
+#include "FFmpegWrapper.h"
+
 @interface ViewController ()
 
 @end
@@ -277,6 +283,24 @@
         WeAreRecording = NO;
         
         [MovieFileOutput stopRecording];
+        
+        NSString *outputPath = [[NSString alloc] initWithFormat:@"%@%@", NSTemporaryDirectory(), @"output.mov"];        
+        NSString *outputPathNew = [NSTemporaryDirectory() stringByAppendingPathComponent:@"out.m3u8"];
+        
+        FFmpegWrapper *wrapper = [[FFmpegWrapper alloc] init];
+        [wrapper convertInputPath:outputPath outputPath:outputPathNew options:nil progressBlock:
+         ^(NSUInteger bytesRead, uint64_t totalBytesRead, uint64_t totalBytesExpectedToRead) {
+             
+             //Do loading here
+             NSLog(@"Processing right now");
+             
+         } completionBlock:^(BOOL success, NSError *error) {
+             
+             // Do whatever after it is complete
+             NSLog(@"wow its done");
+             
+         }];
+        
     }
 }
 
@@ -320,6 +344,11 @@ didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL
         
     }
 }
+
+-(void)libWork{
+
+}
+
 
 
 - (void)didReceiveMemoryWarning {
